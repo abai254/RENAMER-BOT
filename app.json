@@ -32,7 +32,7 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "DATABASE_URI": {
+    "DATABASE_URL": {
       "description": "Database Uri",
       "value": ""
     },
