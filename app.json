@@ -32,4 +32,31 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "
+    "DB_URI": {
+      "description": "Database Uri",
+      "value": ""
+    },
+    "BANNED_USERS": {
+      "description": "Banned Unwanted members..",
+      "value": "",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
