@@ -32,10 +32,12 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "BANNED_USERS": {
-      "description": "Banned Unwanted members..",
-      "value": "",
-      "required": false
+    "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": ""
+    "DATABASE_URI": {
+      "description": "Database URI, from https://cloud.mongodb.com/",
+      "value": ""
     }
   },
   "addons": [
