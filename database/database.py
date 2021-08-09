@@ -9,15 +9,8 @@ import asyncio
 
 from sqlalchemy import Column, Integer, Boolean, String, ForeignKey, UniqueConstraint, func
 
-
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
-
-
 def start() -> scoped_session:
-    engine = create_engine(Config.DB_URI, client_encoding="utf8")
+    engine = create_engine(os.environ.get("DATABASE_URL", ""), client_encoding="utf8")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
