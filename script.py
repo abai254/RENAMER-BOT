@@ -31,18 +31,27 @@ Send me any Telegram file and choose appropriate option!
 
     HELP_USER = """
 
-<b>It's not that complicated😅</b>
-    
-1. Send me a custom thumbnail (Optional) 
+<b>Hey, Follow these steps:</b>
 
-2. Send the file to be renamed
+➠ Send custom thumbnail ( optional )
+➠ Send me any telegram file or media.
+➠ Choose appropriate option.
 
-3. Choose appropriate option
+Available Commands
 
-4. Send the new file when bot asks 
+/start - Checking Bot Online
+/help - For more help
+/about - For more about me
+/status - For Bot status
+/showthumb - To view current thumbnail
+/delthumb - To deleting current thumbnail
+
+>> Please join my updates channel for more bots and updates and Please contact Fayas for reporting, bugs, requests, and suggestions.
+
+Made by @APBotz
 
 
-<b>By @Ts_Bots</b>
+<b>By @APBotz</b>
 """
 
     ABOUT_TEXT = """
