@@ -32,29 +32,4 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "AUTH_USERS": {
-      "description": "allow only pre-defined users to use this bot",
-      "value": ""
-    "DATABASE_URI": {
-      "description": "Database URI, from https://cloud.mongodb.com/",
-      "value": ""
-    }
-  },
-  "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
-}
+    "
