@@ -32,10 +32,6 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "DATABASE_URL": {
-      "description": "Database Uri",
-      "value": ""
-    },
     "BANNED_USERS": {
       "description": "Banned Unwanted members..",
       "value": "",
