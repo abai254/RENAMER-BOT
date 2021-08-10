@@ -39,10 +39,8 @@ def send_start(bot, update):
         parse_mode="markdown",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id, 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]], [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/APSupport")]]), [[InlineKeyboardButton(text="Help", callback_data='help')]]), 
-        [[InlineKeyboardButton(text="Close", callback_data='close')]])
-
-)
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]], [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/APSupport")]])
+        )
 
 
 @Client.on_message(filters.command(["upgrade"]))
