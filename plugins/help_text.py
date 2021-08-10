@@ -39,7 +39,7 @@ def send_start(bot, update):
         parse_mode="markdown",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id, 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]], [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/APSupport")]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]], [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/APSupportGroup")]])
         )
 
 
