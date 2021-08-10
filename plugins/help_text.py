@@ -29,6 +29,18 @@ from pyrogram.errors import UserNotParticipant
 from plugins.rename_file import rename_doc
 
 
+@Client.on_message(filters.command(["help"]))
+def help_user(bot, update):
+    bot.send_message(
+        chat_id=update.chat.id,
+        text=script.HELP_USER,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]]),
+        parse_mode="html",
+        disable_web_page_preview=True,
+        reply_to_message_id=update.message_id
+    )
+
+
 @Client.on_message(filters.command(["start"]))
 def send_start(bot, update):
     # logger.info(update)
@@ -39,8 +51,8 @@ def send_start(bot, update):
         parse_mode="markdown",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id, 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]]
-        )
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]])
+    )
 
 
 @Client.on_message(filters.command(["upgrade"]))
@@ -53,6 +65,17 @@ def upgrade(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
+    )
+
+@pyrogram.Client.on_message(filters.command(["about"]))
+async def about(bot, update):
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=script.ABOUT_TEXT,
+        parse_mode="markdown",
+        reply_to_message_id=update.message_id, 
+        disable_web_page_preview = True, 
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤖 Updates Channel", url="https://t.me/APBotz")]])  
     )
 
 
