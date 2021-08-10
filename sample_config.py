@@ -26,5 +26,5 @@ class Config(object):
     CHUNK_SIZE = 128
 
     # Database url
-    DB_URI = "mongodb+srv://screenshot-bot:screenshot-bot@cluster0.swfge.mongodb.net/cluster0?retryWrites=true&w=majority"
+    DB_URI = os.environ.get("DATABASE_URL", "")
 
